@@ -1,6 +1,6 @@
 export const CTF_DESCRIPTION = "Coding the Future is a student-led program offering free virtual coding classes and one-on-one tutoring to students around the world.\n" +
     "                    Whether you want to learn Python, develop your first website, or make a neural network, we can help you!\n" +
-    "                    Every tutor are dedicated and effective teachers committed to spreading the joy of computer science!";
+    "                    All of our tutors are dedicated and effective teachers committed to spreading the joy of computer science!";
 
 export const VALUES_EFFECTIVE_INSTRUCTION = "Instructors are vetted and interviewed to make sure they are able to teach concepts effectively. We have a large network of instructors with a wide range of expertise, so we can match students with an instructor who is well suited to help them.";             // TODO
 export const VALUES_ACCESSIBILITY = "Our program is completely free! We believe that everyone should have the opportunity to learn computer science, regardless of their financial situation.";                     // TODO

@@ -1,28 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import {createRoot} from "react-dom/client";
-import * as components from "./lib/Components.js"
-import * as links from "./lib/Links.js"
-import * as images from "./lib/Images.js";
-import * as text from "./lib/TextDescriptions.js";
+import * as components from "../../../lib/Components.js"
+import * as links from "../../../lib/Links.js"
+import * as images from "../../../lib/Images.js";
+import * as text from "../../../lib/TextDescriptions.js";
 
-function FrontPageSection() {
+export function S1_1() {
     return (
-        <div className = "frontpage">
-            <Content0 />
-            <Content1 />
-            <Content2 />
-            <Content3 />
-            <Content4 />
-        </div>
-    );
-}
-
-function Content0() {
-    return (
-        <div className = "frontpage-section capture-page">
+        <>
             <div className = "frontpage-section-left">
                 <h2>Free Virtual CS Classes & Tutoring</h2>
                 <components.LinkButton innerText = "Sign up today!" linkTo ={links.classSignUpLink} />
@@ -31,11 +14,11 @@ function Content0() {
             <div className = "frontpage-section-right">
                 <img className = "computer-graphic" alt="computer graphic" src = "src/assets/icons/computer.png"/>
             </div>
-        </div>
+        </>
     );
 }
 
-function Section1_1() {
+export function S2_1() {
     const rows = [
         [
             {nm: "python", mg: images.LANG_PY_ICON},
@@ -69,12 +52,12 @@ function Section1_1() {
     );
 }
 
-function Section1_2() {
+export function S2_2() {
     const values = [
         {val: "Effective instruction", img: images.VALUES_EFFECTIVE_INSTRUCTION, p: text.VALUES_EFFECTIVE_INSTRUCTION},
         {val: "Accessibility", img: images.VALUES_ACCESSIBILITY, p: text.VALUES_ACCESSIBILITY},
         {val: "Student Leadership", img: images.VALUES_STUDENT_LEADERSHIP, p: text.VALUES_STUDENT_LEADERSHIP}
-        
+
     ];
     return (
         <div className = "content1-2">
@@ -82,10 +65,10 @@ function Section1_2() {
             <div className = "values-section">
                 {
                     values.map((value) => (
-                        <div className = "values-wrapper">
-                            <img alt = {value.val + " graphic"} src = {value.img}/>
-                            <p>{value.p}</p>
-                        </div>
+                            <div className = "values-wrapper">
+                                <img alt = {value.val + " graphic"} src = {value.img}/>
+                                <p>{value.p}</p>
+                            </div>
                         )
                     )
                 }
@@ -95,42 +78,24 @@ function Section1_2() {
     );
 }
 
-function Content1() {
+export function S3_1() {                         /*TODO*/
     return (
-        <div className = "frontpage-section">
-            <Section1_1 />
-            <Section1_2 />
+        <div className = "content2-1">
+            <img alt = "student demos carousel (images)" src="/app/public"/>
         </div>
     );
 }
 
-function Section2_1() {                         /*TODO*/
-    return (
-      <div className = "content2-1">
-          <img alt = "student demos carousel (images)" src="/"/>
-      </div>
-    );
-}
-
-function Section2_2() {                         /*TODO*/
+export function S3_2() {                         /*TODO*/
     return (
         <div className = "content2-2">
-            <img alt = "student demos carousel (videos)" src="/"/>
+            <img alt = "student demos carousel (videos)" src="/app/public"/>
         </div>
     );
     /*Carousel of student demos (videos)*/
 }
 
-function Content2() {
-    return (
-        <div className = "frontpage-section">
-            <Section2_1 />
-            <Section2_2 />
-        </div>
-    );
-}
-
-function Section3_1() {
+export function S4_1() {
     const cols = [
         {
             item: (<p>Fill out <a href = {links.classSignUpLink}>this form</a>!</p>),
@@ -152,38 +117,30 @@ function Section3_1() {
         }
     ];
     return (
-      <div className = "content3-1">
-          <div>
-              <h1>Getting Started</h1>
-          </div>
-          <div className = "start-wrapper">
-              {
-                  cols.map((col) => (
-                      <div className = "start-section">
-                          {col.item}
-                          <img alt = {col.alt} src={col.img}/>
-                          <p>{col.desc}</p>
-                      </div>
-                  ))
-              }
-          </div>
-          <div className = "buttons-wrapper">
-              <components.LinkButton innerText="Sign up for lessons!" linkTo={links.classSignUpLink}/>
-              <components.LinkButton innerText="Learn more about classes!" linkTo="/"/> {/*TODO*/}
-          </div>
-      </div>
+        <div className = "content3-1">
+            <div>
+                <h1>Getting Started</h1>
+            </div>
+            <div className = "start-wrapper">
+                {
+                    cols.map((col) => (
+                        <div className = "start-section">
+                            {col.item}
+                            <img alt = {col.alt} src={col.img}/>
+                            <p>{col.desc}</p>
+                        </div>
+                    ))
+                }
+            </div>
+            <div className = "buttons-wrapper">
+                <components.LinkButton innerText="Sign up for lessons!" linkTo={links.classSignUpLink}/>
+                <components.LinkButton innerText="Learn more about classes!" linkTo="/"/> {/*TODO*/}
+            </div>
+        </div>
     );
 }
 
-function Content3() {
-    return (
-      <div className = "frontpage-section">
-          <Section3_1 />
-      </div>
-    );
-}
-
-function Section4_1() {
+export function S5_1() {
     return (
         <div>
             <img alt = "worldmap" src = {images.WORLD_MAP_IMPACT} />
@@ -195,7 +152,7 @@ function Section4_1() {
     );
 }
 
-function Section4_2() {
+export function S5_2() {
     return (
         <div>
             <h1>Join us!</h1>
@@ -205,21 +162,3 @@ function Section4_2() {
     )
 }
 
-function Content4() {
-    return (
-      <div className = "frontpage-section">
-          <Section4_1/>
-          <Section4_2/>
-      </div>
-    );
-}
-
-function App() {
-    return (
-      <>
-          <FrontPageSection />
-      </>
-    );
-}
-
-export default App

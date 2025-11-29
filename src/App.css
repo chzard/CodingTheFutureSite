@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+/*:root {*/
+/*    --header-height: 75px;*/
+/*    --lbutton-bg-color: #f2794e;*/
+/*    --lbutton-hover-bg-color: #db5c39;*/
+/*    --lbutton-link-color: white;*/
+/*    --lbutton-hover-link-color: #e3c6a8;*/
+/*    --lbutton-padding: 15px;                        !*TODO*!*/
+
+/*    --sect-h-font-size: 25px;                       !*TODO*!*/
+
+/*    --sect-top-pad: 50px;                           !*TODO*!*/
+/*    --sect-right-pad: 0px;                          !*TODO*!*/
+/*    --sect-bottom-pad: 50px;                        !*TODO*!*/
+/*    --sect-left-pad: 0px;                           !*TODO*!*/
+/*    --sect-vertical-margin: 100px;                  !*TODO*!*/
+/*}*/
+
+/*.section-heading {                                  !*TODO*!*/
+/*    text-align: center;*/
+/*    font-weight: bolder;*/
+/*    font-size: var(--sect-h-font-size);*/
+/*}*/
+
+/*.frontpage-section{*/
+/*    padding: var(--sect-top-pad), var(--sect-right-pad), var(--sect-bottom-pad), var(--sect-left-pad);*/
+/*    text-align: center;*/
+/*}*/
+
+/*.buttons-wrapper {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*!**/
+/*INDIVIDUAL*/
+/* *!*/
+
+/*main {*/
+/*    margin-top: var(--header-height);*/
+/*}*/
+
+/*.frontpage {*/
+/*    !*margin-top: var(--header-height);*!*/
+/*    gap: 300px;*/
+/*}*/
+
+/*.frontpage > *:not(:last-child) {*/
+/*    margin-bottom: var(--sect-vertical-margin);*/
+/*}*/
+
+/*.capture-page {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+/*.frontpage-section-left {*/
+/*    flex: 1 1 0px;*/
+/*}*/
+/*.frontpage-section-right {*/
+/*    flex: 1 1 0px;*/
+/*}*/
+/*.capture-page div {*/
+/*    align-content: center;*/
+/*    text-align: center;*/
+/*}*/
+
+/*!**/
+/*    TODO*/
+/**!*/
+
+/*!**/
+/*HEADER BAR*/
+/* *!*/
+
+/*.navbar {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    background-color: white;*/
+/*    align-items: center;*/
+/*    padding: 0px 5vw 0px 5vw;*/
+/*}*/
+
+/*.logo {*/
+/*    height: var(--header-height);*/
+/*}*/
+
+/*.navbar ul {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.navbar li {*/
+/*    padding: 10px;*/
+/*}*/
+
+/*!**/
+/*COMPONENTS*/
+/* *!*/
+
+/*.linkbutton {*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*    background-color: var(--lbutton-bg-color);*/
+/*    color: var(--lbutton-link-color);*/
+/*    padding: var(--lbutton-padding);*/
+/*}*/
+
+/*.linkbutton:hover {*/
+/*    background-color: var(--lbutton-hover-bg-color);*/
+/*    color: var(--lbutton-hover-link-color);*/
+/*}*/
+
+/*.linkbutton-wrapper {*/
+/*    padding: var(--lbutton-padding);*/
+/*}*/
+
+/*.computer-graphic {*/
+/*    width: 50%;*/
+/*}*/
+
+/*.language-section {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.language-section-icon {*/
+/*    height: 100px;*/
+/*}*/
+
+/*.langsection-row {*/
+/*    display:flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+
+/*!**/
+/* *!*/
+
+/*.values-section {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+
+/*.values-wrapper, .start-section {*/
+/*    width: 33.3333%;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.start-wrapper {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+
+/*!**/
+/*CONTENT / SECTIONS*/
+/* *!*/
+
+/*.content3-1 {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
+

@@ -5,12 +5,16 @@ import * as links from "../lib/Links.js"
 import * as images from "../lib/Images.js";
 import * as text from "../lib/TextDescriptions.js";
 
-import * as sections from "./FrontPage/FrontPageSections.jsx";
+import * as sections from "./sections/FrontPage/FrontPageSections.jsx";
 
 function FrontPage() {
     return (
         <main>
-            <FrontPageSection />
+            <sections.AboutUsAnnouncementPanel/>
+            <sections.YouCanLearnWhyUs/>
+            <sections.MediaCarousel/>
+            <sections.GettingStarted/>
+            <sections.ImpactJoinUs/>
         </main>
     );
 }
